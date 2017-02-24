@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Jekotia.net
+page.title: Jekotia.net
 ---
 
 ## Welcome to Jekotia.net
