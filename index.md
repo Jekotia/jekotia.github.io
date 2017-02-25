@@ -1,6 +1,5 @@
 ---
-layout: default
-title: Jekotia - Hobbyist EE & Programming
+
 ---
 
 ## Welcome to Jekotia.net
