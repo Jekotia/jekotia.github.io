@@ -1,0 +1,12 @@
+- title: "Home"
+  href: "/"
+
+- title: "Blog"
+  href: "/blog/"
+
+- title: "PCB's"
+  subcategories:
+    - subtitle: "Passive Summing Mixer"
+      subhref: "/pcb/tito-psm"
+    - subtitle: "Arduino Footswitch PC Input"
+      subhref: "/pcb/afsipc"
