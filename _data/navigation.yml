@@ -1,12 +1,12 @@
-- title: "Home"
-  href: "/"
+# Belongs at: /_data/navigation.yml
 
-- title: "Blog"
-  href: "/blog/"
+- title: Home
+  url: /
 
-- title: "PCB's"
-  subcategories:
-    - subtitle: "Passive Summing Mixer"
-      subhref: "/pcb/tito-psm"
-    - subtitle: "Arduino Footswitch PC Input"
-      subhref: "/pcb/afsipc"
+- title: PCB's
+  url: #
+  sublinks:
+    - title: Passive Summing Mixer
+      url: /pcb/tito-psm
+    - title: Arduino Footswitch PC Input
+      url: /pcb/afsipc
