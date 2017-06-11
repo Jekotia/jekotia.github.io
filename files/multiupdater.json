@@ -1,0 +1,49 @@
+{
+	"entries": [
+		{
+			"name": "-------Config Update-------",
+			"url": "http://jekotia.net/files/multiupdater.json",
+			"path": "/3ds/MultiUpdater/config.json"
+		},
+		{
+			"name": "Luma3DS (latest stable)",
+			"url": "https://astronautlevel2.github.io/Luma3DS/release.zip",
+			"inzip": "out/boot.firm",
+			"path": "/boot.firm"
+		},
+		{
+			"name": "Luma3DS (latest commit)",
+			"url": "https://astronautlevel2.github.io/Luma3DS/latest.zip",
+			"inzip": "out/boot.firm",
+			"path": "/boot.firm"
+		},
+		{
+			"name": "Hourglass9",
+			"url": "http://d0k3.secretalgorithm.com/Hourglass9/latest.zip",
+			"inzip": "Hourglass9.firm",
+			"path": "/luma/payloads/start_Hourglass9.firm"
+		},
+		{
+			"name": "Decrypt9WIP",
+			"url": "http://d0k3.secretalgorithm.com/Decrypt9WIP/latest.zip",
+			"inzip": "Decrypt9WIP.firm",
+			"path": "/luma/payloads/up_Decrypt9WIP.firm"
+		},
+		{
+			"name": "GodMode9",
+			"url": "http://d0k3.secretalgorithm.com/GodMode9/latest.zip",
+			"inzip": "GodMode9.firm",
+			"path": "/luma/payloads/right_GodMode9.firm"
+		},
+		{
+			"name": "----Alternative Config----",
+			"url": "http://onoitsu2.com/files/config2.json",
+			"path": "/3ds/MultiUpdater/config.json"
+		},
+		{
+			"name": "----Splash Config----",
+			"url": "http://onoitsu2.com/files/splash.json",
+			"path": "/3ds/MultiUpdater/config.json"
+		}
+	]
+}
