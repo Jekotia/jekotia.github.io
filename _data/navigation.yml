@@ -3,10 +3,12 @@
 - title: Home
   url: /
 
-- title: PCB's
-  url: #
-  sublinks:
-    - title: Passive Summing Mixer
-      url: /pcb/tito-psm
-    - title: Arduino Footswitch PC Input
-      url: /pcb/afsipc
+#- title: PCB's
+#  url: #
+#  sublinks:
+#    - title: Passive Summing Mixer
+#      url: /pcb/tito-psm
+#    - title: Arduino Footswitch PC Input
+#      url: /pcb/afsipc
+- title: Contact
+  url: /contact.html
