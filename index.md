@@ -5,6 +5,16 @@ title: Jekotia - Hobbyist EE & Programming
 
 ## Welcome to Jekotia.net :: Hobbyist EE & Programming
 
-You can use the [editor on GitHub](https://github.com/Jekotia/jekotia.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+This site is on my to-do list.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
+### Find me at ###
+#### Social ####
+Discord: Jekotia#6919  
+Twitter: [Jekotia](https://twitter.com/jekotia  )
+
+#### Gaming ####
+Steam: [Jekotia](http://steamcommunity.com/id/jekotia)  
+Uplay: Jekotia  
+Battle.net: Jekotia#1607  
+Origin: Jekotia  
