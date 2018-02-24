@@ -4,7 +4,8 @@ title: Jekotia.net » Contact
 ---
 
 ## Jekotia.net » Contact
-Email: contact@jekotia.net
+Email: contact@jekotia.net  
+Public code: [GitHub](https://github.com/jekotia)
 
 ### Find me at
 #### Social
