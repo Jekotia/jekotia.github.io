@@ -4,7 +4,7 @@ title: Jekotia.net » Docker
 ---
 
 ## Jekotia.net » Docker
-[My Docker Hub page](https://hub.docker.com/u/jekotia/)  
+[My Docker Hub profile](https://hub.docker.com/u/jekotia/)  
 ![Docker Build Status](https://img.shields.io/docker/build/jekotia/alerthub.svg) - alerthub  
 ![Docker Build Status](https://img.shields.io/docker/build/jekotia/discord-irc.svg) - discord-irc  
 ![Docker Build Status](https://img.shields.io/docker/build/jekotia/nginx-proxy.svg) - nginx-proxy  
