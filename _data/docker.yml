@@ -4,6 +4,8 @@
 
 - title: discord-irc
 
+- title: jekyll
+
 - title: nginx
 
 - title: nginx-proxy
@@ -13,5 +15,7 @@
 - title: resin-raspberrypi3-alpine-node
 
 - title: resin-raspberrypi3-debian
+
+- title: ruby
 
 - title: weechat
