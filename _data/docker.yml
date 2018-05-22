@@ -1,0 +1,15 @@
+# Belongs at: /_data/docker.yml
+
+- title: alerthub
+
+- title: discord-irc
+
+- title: nginx-proxy
+
+- title: resin-raspberrypi3-alpine
+
+- title: resin-raspberrypi3-alpine-node
+
+- title: resin-raspberrypi3-debian
+
+- title: weechat

@@ -1,0 +1,22 @@
+<!-- Belongs at: /_includes/docker.html -->
+
+<!-- Then we build the docker list. -->
+<table>
+  <tbody>
+  {% for entry in site.data.docker %}
+  <tr>
+    <td>{{ entry.title }}</td>
+    <td>
+      <a href="https://microbadger.com/images/jekotia/{{ entry.title }}">
+        <img src="https://images.microbadger.com/badges/image/jekotia/{{ entry.title }}.svg" alt="Get your own image badge on microbadger.com" />
+      </a>
+    </td>
+    <td>
+      <a href="https://hub.docker.com/r/jekotia/{{ entry.url }}/">
+        <img src="https://img.shields.io/docker/build/jekotia/{{ entry.title }}.svg" alt="Docker Build Status" />
+      </a>
+    </td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
