@@ -8,6 +8,8 @@
 
 - title: nginx
 
+- title: nginx-php
+
 - title: nginx-proxy
 
 - title: resin-raspberrypi3-alpine
