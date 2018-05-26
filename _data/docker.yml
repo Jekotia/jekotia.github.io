@@ -18,6 +18,8 @@
 
 - title: resin-raspberrypi3-debian
 
+- title: smtp-relay
+
 - title: ruby
 
 - title: weechat
