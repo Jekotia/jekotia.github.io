@@ -1,20 +1,42 @@
+MAIN ---->
+
+{% for entry in site.data.test %}
+  {% assign subimages = entry.subimage %}
+  {% if subimages %}
+
+    {% for subimage in subimages %}
+      subimage {{ subimage.title }}
+    {% endfor %}
+
+  {% else %}
+
+    image {{ entry.title }}
+
+  {% endif %}
+{% endfor %}
+
+
+
 TEST -->
 <table>
   <tbody>
   {% for entry in site.data.test %}
 
-{% capture content %}
-    <td>
-      <a href="https://microbadger.com/images/jekotia/timg">
-        <img src="https://images.microbadger.com/badges/image/jekotia/timg.svg" alt="Get your own image badge on microbadger.com" />
-      </a>
-    </td>
-    <td>
-      <a href="https://hub.docker.com/r/jekotia/timg/">
-        <img src="https://img.shields.io/docker/build/jekotia/timg.svg" alt="Docker Build Status" />
-      </a>
-    </td>
-{% endcapture %}
+    {% capture content %}
+      <tr>
+        <td> timg </td>
+        <td>
+          <a href="https://microbadger.com/images/jekotia/timg">
+            <img src="https://images.microbadger.com/badges/image/jekotia/timg.svg" alt="Get your own image badge on microbadger.com" />
+          </a>
+        </td>
+        <td>
+          <a href="https://hub.docker.com/r/jekotia/timg/">
+            <img src="https://img.shields.io/docker/build/jekotia/timg.svg" alt="Docker Build Status" />
+          </a>
+        </td>
+      </tr>
+    {% endcapture %}
 
 
     {% assign subimages = entry.subimage %}
@@ -34,19 +56,6 @@ TEST -->
 
 {{ content }}
 
-  <tr>
-    <td>{{ img }}</td>
-    <td>
-      <a href="https://microbadger.com/images/jekotia/{{ img }}">
-        <img src="https://images.microbadger.com/badges/image/jekotia/{{ img }}.svg" alt="Get your own image badge on microbadger.com" />
-      </a>
-    </td>
-    <td>
-      <a href="https://hub.docker.com/r/jekotia/{{ img }}/">
-        <img src="https://img.shields.io/docker/build/jekotia/{{ img }}.svg" alt="Docker Build Status" />
-      </a>
-    </td>
-  </tr>
 
   {% endfor %}
 
