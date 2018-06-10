@@ -7,6 +7,7 @@
 
   <!-- Begin first-level content -->
   {% capture img %}{{ entry.title }}{% endcapture %}
+  {% capture imgindent %}0{% endcapture %}
   {% include test-tpl.html %}
   <!--   End first-level content -->
 
@@ -16,8 +17,8 @@
     {% for subimage in subimages %}
 
       <!-- Begin second-level content -->
-      {% capture img %}{{ subimage.title }}{% endcapture %}
-      {% capture imgstyle %} text-indent: 20px; {% endcapture %}
+      {% capture img %}^-{{ subimage.title }}{% endcapture %}
+      {% capture imgindent %}50{% endcapture %}
       {% include test-tpl.html %}
       <!--   End second-level content -->
 
@@ -27,8 +28,8 @@
         {% for subimage in subimages2 %}
 
           <!-- Begin third-level content -->
-          {% capture img %}{{ subimage.title }}{% endcapture %}
-          {% capture imgstyle %} text-indent: 40px; {% endcapture %}
+          {% capture img %}^-{{ subimage.title }}{% endcapture %}
+          {% capture imgindent %}100{% endcapture %}
           {% include test-tpl.html %}
           <!--   End third-level content -->
 
