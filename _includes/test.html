@@ -1,34 +1,44 @@
 <!-- Primary logic structure for this page -->
 
-<!-- begin first level -->
+<!-- begin first-level logic -->
 {% for entry in site.data.test %}
-  image {{ entry.title }}
 
+  <!-- Begin first-level content -->
   {% capture img %}{{ entry.title }}{% endcapture %}
   {% include test-tpl.html %}
+  <!--   End first-level content -->
 
-  <!-- Begin second level -->
+  <!-- Begin second level logic -->
   {% assign subimages = entry.subimage %}
   {% if subimages %}
     {% for subimage in subimages %}
-      subimage {{ subimage.title }}
 
-      <!-- Begin third level -->
+      <!-- Begin second-level content -->
+      {% capture img %}{{ subimage.title }}{% endcapture %}
+      {% include test-tpl.html %}
+      <!--   End second-level content -->
+
+      <!-- Begin third-level logic -->
       {% assign subimages2 = subimage.subimage %}
       {% if subimages2 %}
         {% for subimage in subimages2 %}
           subimage2 {{ subimage.title }}
 
+          <!-- Begin third-level content -->
+          {% capture img %}{{ subimage.title }}{% endcapture %}
+          {% include test-tpl.html %}
+          <!--   End third-level content -->
+
         {% endfor %}
       {% endif %}
-      <!-- End third level -->
+      <!-- End third-level logic -->
 
     {% endfor %}
   {% endif %}
-  <!-- End second level -->
+  <!-- End second-level logic -->
 
 {% endfor %}
-<!-- End first level -->
+<!-- End first-level logic -->
 
 <table>
   <tbody>
