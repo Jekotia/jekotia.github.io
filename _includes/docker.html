@@ -12,24 +12,24 @@
   <!--   End first-level content -->
 
   <!-- Begin second level logic -->
-  {% assign subimages = entry.subimage %}
-  {% if subimages %}
-    {% for subimage in subimages %}
+  {% assign level2 = entry.child %}
+  {% if level2 %}
+    {% for child in level2 %}
 
       <!-- Begin second-level content -->
-      {% capture img %}{{ subimage.title }}{% endcapture %}
-      {% capture imgindent %}50{% endcapture %}
+      {% capture img %}{{ child.title }}{% endcapture %}
+      {% capture imgindent %}25{% endcapture %}
       {% include docker-row.html %}
       <!--   End second-level content -->
 
       <!-- Begin third-level logic -->
-      {% assign subimages2 = subimage.subimage %}
-      {% if subimages2 %}
-        {% for subimage in subimages2 %}
+      {% assign level3 = child.child %}
+      {% if level3 %}
+        {% for child in level3 %}
 
           <!-- Begin third-level content -->
-          {% capture img %}{{ subimage.title }}{% endcapture %}
-          {% capture imgindent %}100{% endcapture %}
+          {% capture img %}{{ child.title }}{% endcapture %}
+          {% capture imgindent %}50{% endcapture %}
           {% include docker-row.html %}
           <!--   End third-level content -->
 

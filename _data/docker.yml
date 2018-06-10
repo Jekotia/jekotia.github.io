@@ -1,23 +1,23 @@
 # Belongs at: /_data/docker.yml
 
 - title: resin-raspberrypi3-alpine
-  subimage:
+  child:
     - title: nginx
-      subimage:
+      child:
         - title: nginx-php
     - title: nginx-proxy
     - title: weechat
 
 - title: resin-raspberrypi3-alpine-node
-  subimage:
+  child:
     - title: alerthub
     - title: discord-irc
 
 - title: resin-raspberrypi3-debian
-  subimage:
+  child:
     - title: commafeed
     - title: ruby
-      subimage:
+      child:
         - title: jekyll
     - title: smtp-relay
 
