@@ -1,5 +1,7 @@
 <!-- Primary logic structure for this page -->
 
+<table>
+ <tbody>
 <!-- begin first-level logic -->
 {% for entry in site.data.test %}
 
@@ -22,7 +24,6 @@
       {% assign subimages2 = subimage.subimage %}
       {% if subimages2 %}
         {% for subimage in subimages2 %}
-          subimage2 {{ subimage.title }}
 
           <!-- Begin third-level content -->
           {% capture img %}{{ subimage.title }}{% endcapture %}
@@ -39,6 +40,8 @@
 
 {% endfor %}
 <!-- End first-level logic -->
+ </tbody>
+</table>
 
 <table>
   <tbody>
