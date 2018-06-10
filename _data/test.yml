@@ -4,7 +4,7 @@
   subimage:
     - title: nginx
     subimage:
-        - title: nginx-php
+      - title: nginx-php
     - title: nginx-proxy
     - title: weechat
 
