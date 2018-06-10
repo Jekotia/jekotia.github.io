@@ -1,4 +1,4 @@
-TEST ONE -->
+TEST -->
 <table>
   <tbody>
   {% for entry in site.data.test %}
@@ -30,11 +30,10 @@ TEST ONE -->
 
     {% endif %}
 
-{{ {{ content }} | replace: "timg", {{ img }} }}
+{{ "{{ content }}" | replace: "timg", "{{ img }}" }}
 
 {{ content }}
 
-TEST TWO -->
   <tr>
     <td>{{ img }}</td>
     <td>
@@ -54,7 +53,7 @@ TEST TWO -->
   </tbody>
 </table>
 
-TEST THREE -->
+TEST -->
     {% for entry in site.data.test %}
         {% assign subimages = entry.subimages %}
         {% if subimages %}
