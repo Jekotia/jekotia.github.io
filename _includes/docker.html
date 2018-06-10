@@ -1,22 +1,47 @@
-<!-- Belongs at: /_includes/docker.html -->
+<!-- Primary logic structure for this page -->
 
-<!-- Then we build the docker list. -->
 <table>
-  <tbody>
-  {% for entry in site.data.docker %}
-  <tr>
-    <td>{{ entry.title }}</td>
-    <td>
-      <a href="https://microbadger.com/images/jekotia/{{ entry.title }}">
-        <img src="https://images.microbadger.com/badges/image/jekotia/{{ entry.title }}.svg" alt="Get your own image badge on microbadger.com" />
-      </a>
-    </td>
-    <td>
-      <a href="https://hub.docker.com/r/jekotia/{{ entry.title }}/">
-        <img src="https://img.shields.io/docker/build/jekotia/{{ entry.title }}.svg" alt="Docker Build Status" />
-      </a>
-    </td>
-  </tr>
-  {% endfor %}
-  </tbody>
+ <tbody>
+<!-- begin first-level logic -->
+{% for entry in site.data.docker %}
+
+  <!-- Begin first-level content -->
+  {% capture img %}{{ entry.title }}{% endcapture %}
+  {% capture imgindent %}0{% endcapture %}
+  {% include docker-row.html %}
+  <!--   End first-level content -->
+
+  <!-- Begin second level logic -->
+  {% assign subimages = entry.subimage %}
+  {% if subimages %}
+    {% for subimage in subimages %}
+
+      <!-- Begin second-level content -->
+      {% capture img %}{{ subimage.title }}{% endcapture %}
+      {% capture imgindent %}50{% endcapture %}
+      {% include docker-row.html %}
+      <!--   End second-level content -->
+
+      <!-- Begin third-level logic -->
+      {% assign subimages2 = subimage.subimage %}
+      {% if subimages2 %}
+        {% for subimage in subimages2 %}
+
+          <!-- Begin third-level content -->
+          {% capture img %}{{ subimage.title }}{% endcapture %}
+          {% capture imgindent %}100{% endcapture %}
+          {% include docker-row.html %}
+          <!--   End third-level content -->
+
+        {% endfor %}
+      {% endif %}
+      <!-- End third-level logic -->
+
+    {% endfor %}
+  {% endif %}
+  <!-- End second-level logic -->
+
+{% endfor %}
+<!-- End first-level logic -->
+ </tbody>
 </table>
