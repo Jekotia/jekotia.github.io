@@ -1,16 +1,21 @@
 MAIN ---->
 
 {% for entry in site.data.test %}
+  image {{ entry.title }}
+
   {% assign subimages = entry.subimage %}
   {% if subimages %}
-
     {% for subimage in subimages %}
       subimage {{ subimage.title }}
+
+      {% assign subimages2 = subimage.subimage %}
+      {% if subimages2 %}
+        {% for subimage in subimages2 %}
+          subimage2 {{ subimage.title }}
+        {% endfor %}
+
+      {% endif %}
     {% endfor %}
-
-  {% else %}
-
-    image {{ entry.title }}
 
   {% endif %}
 {% endfor %}
