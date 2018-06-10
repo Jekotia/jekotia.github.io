@@ -1,19 +1,21 @@
+TEST ONE -->
+<table>
+  <tbody>
+  {% for entry in site.data.test %}
+
 {% capture content %}
     <td>
-      <a href="https://microbadger.com/images/jekotia/{{ img }}">
-        <img src="https://images.microbadger.com/badges/image/jekotia/{{ img }}.svg" alt="Get your own image badge on microbadger.com" />
+      <a href="https://microbadger.com/images/jekotia/timg">
+        <img src="https://images.microbadger.com/badges/image/jekotia/timg.svg" alt="Get your own image badge on microbadger.com" />
       </a>
     </td>
     <td>
-      <a href="https://hub.docker.com/r/jekotia/{{ img }}/">
-        <img src="https://img.shields.io/docker/build/jekotia/{{ img }}.svg" alt="Docker Build Status" />
+      <a href="https://hub.docker.com/r/jekotia/timg/">
+        <img src="https://img.shields.io/docker/build/jekotia/timg.svg" alt="Docker Build Status" />
       </a>
     </td>
 {% endcapture %}
 
-<table>
-  <tbody>
-  {% for entry in site.data.test %}
 
     {% assign subimages = entry.subimage %}
     {% if subimages %}
@@ -28,8 +30,11 @@
 
     {% endif %}
 
+{{ {{ content }} | replace: "timg", {{ img }} }}
+
 {{ content }}
 
+TEST TWO -->
   <tr>
     <td>{{ img }}</td>
     <td>
@@ -49,6 +54,7 @@
   </tbody>
 </table>
 
+TEST THREE -->
     {% for entry in site.data.test %}
         {% assign subimages = entry.subimages %}
         {% if subimages %}
