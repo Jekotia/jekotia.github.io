@@ -3,8 +3,8 @@
 - title: resin-raspberrypi3-alpine
   subimage:
     - title: nginx
-    subimage:
-      - title: nginx-php
+      subimage:
+        - title: nginx-php
     - title: nginx-proxy
     - title: weechat
 
