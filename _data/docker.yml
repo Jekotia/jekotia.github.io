@@ -18,7 +18,6 @@
     - title: apache-php
       child:
         - title: tt-rss
-    - title: commafeed
     - title: ruby
       child:
         - title: jekyll
