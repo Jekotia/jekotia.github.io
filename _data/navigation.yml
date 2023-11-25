@@ -10,6 +10,8 @@
 #      url: /pcb/tito-psm
 #    - title: Arduino Footswitch PC Input
 #      url: /pcb/afsipc
+- title: Game Servers
+  url: /gameservers.html
 - title: Contact
   url: /contact.html
 - title: Docker

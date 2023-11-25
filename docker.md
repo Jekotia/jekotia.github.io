@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Jekotia.net » Docker
+title: Docker
 ---
 
 ## Jekotia.net » Docker

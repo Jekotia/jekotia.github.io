@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Jekotia.net » Contact
+title: Contact
 ---
 
 ## Jekotia.net » Contact
