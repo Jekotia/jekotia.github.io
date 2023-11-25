@@ -20,8 +20,8 @@
 github: [metadata]
 title: jekotia.net
 email: contact@jekotia.net
-description: >- # this means to ignore newlines until "baseurl:"
-  Hobbyist EE, Programming, Homelab, & Gaming 
+#>- # this means to ignore newlines until "baseurl:"
+description: Hobbyist EE, Programming, Homelab, & Gaming 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekotia
