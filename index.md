@@ -7,6 +7,4 @@ layout: home
 #title: Home
 ---
 
-## Jekotia.net » {{ site.description }}
-
 This site is on my to-do list.

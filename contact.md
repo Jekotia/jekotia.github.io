@@ -3,7 +3,7 @@ layout: default
 title: Contact
 ---
 
-## Jekotia.net » Contact
+## Contact
 Email: contact@jekotia.net  
 Public code: [GitHub](https://github.com/jekotia)
 
