@@ -2,10 +2,11 @@
 layout: post
 title: Steam Deck recommendations
 ---
-*Last updated 2024-12-07 @ 9:53AM EST* 
+*Last updated 2024-12-07 @ 12:13PM EST* 
 
 This is my personal, curated list of software/tools/etc for the Steam Deck.
 
+# Software
 ## General
 * [Decky](https://decky.xyz) (Used in Game Mode): For various helpful plugins. Note that if you decide to rely on Decky, you should not blindly update SteamOS.
 
@@ -30,3 +31,15 @@ This is my personal, curated list of software/tools/etc for the Steam Deck.
 * Filelight: (Desktop Mode): Useful if you need to visualise disk space usage.
 * [Shortix](https://github.com/Jannomag/shortix) (Configured in Desktop Mode): Use in conjunction with Decky Cloud Save to locate and backup game saves.
 * [Steam ROM Manager](https://steamgriddb.github.io/steam-rom-manager/) (Desktop Mode): aka SRM. Used to manage non-Steam game entries in Game Mode. Pre-configured and bundled with EmuDeck.
+
+# Resources
+* [Steam Deck HQ](https://steamdeckhq.com)
+* [Steam Deck community wiki](https://www.sdeck.wiki)
+* [Steam Deck recovery](https://help.steampowered.com/en/faqs/view/1B71-EDF2-EB6D-2BB3)
+
+# Accessories
+* [Project Killswitch](https://dbrand.com/shop/grip/steam-deck-cases) (case)
+* [Core Drive Pro](https://skullnco.com/collections/steam-deck/products/steamdock?variant=44513767948580) (USB-C dock)
+
+# Notes
+1. The Steam Deck ships with a 45 watt charger, which is also the **maximum** wattage it will pull when charging.
