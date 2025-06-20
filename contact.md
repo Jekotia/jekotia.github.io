@@ -13,7 +13,7 @@ Discord: Jekotia#6919
 Twitter: [Jekotia](https://twitter.com/jekotia)
 
 #### Gaming
-Steam: [Jekotia](http://steamcommunity.com/id/jekotia)  
+Steam: [Jekotia](https://steamcommunity.com/id/jekotia)  
 Uplay: Jekotia  
 Battle.net: Jekotia#1607  
 Origin: Jekotia  
