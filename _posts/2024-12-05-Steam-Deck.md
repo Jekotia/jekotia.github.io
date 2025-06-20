@@ -1,8 +1,9 @@
 ---
-layout: post
 title: Steam Deck recommendations
+date: 2024-12-07 12:13:00 -0500
+categories: [Gaming, Steamdeck]
+tags: [ resources ]     # TAG names should always be lowercase
 ---
-*Last updated 2024-12-07 @ 12:13PM EST* 
 
 This is my personal, curated list of software/tools/etc for the Steam Deck.
 
