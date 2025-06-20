@@ -4,5 +4,17 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+## Contact
+Email: contact@jekotia.net  
+Public code: [GitHub](https://github.com/jekotia)
+
+### Find me at
+#### Social
+Discord: Jekotia#6919  
+Twitter: [Jekotia](https://twitter.com/jekotia)
+
+#### Gaming
+Steam: [Jekotia](https://steamcommunity.com/id/jekotia)  
+Uplay: Jekotia  
+Battle.net: Jekotia#1607  
+Origin: Jekotia  
