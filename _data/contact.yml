@@ -14,7 +14,7 @@
   icon: "fas fa-rss"
   noblank: true
 
-- type: custom
+- type: steam
   icon: "fa-brands fa-steam"
   url: 'https://steamcommunity.com/id/jekotia'
 # Uncomment and complete the url below to enable more contact options
