@@ -3,8 +3,9 @@
 - type: github
   icon: "fab fa-github"
 
-- type: twitter
-  icon: "fa-brands fa-twitter"
+- type: steam
+  icon: "fa-brands fa-steam"
+  url: 'https://steamcommunity.com/id/jekotia'
 
 - type: email
   icon: "fas fa-envelope"
@@ -14,9 +15,9 @@
   icon: "fas fa-rss"
   noblank: true
 
-- type: steam
-  icon: "fa-brands fa-steam"
-  url: 'https://steamcommunity.com/id/jekotia'
+- type: twitter
+  icon: "fa-brands fa-twitter"
+
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
