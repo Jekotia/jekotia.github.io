@@ -41,7 +41,7 @@ case $1 in
         read -p "Are you sure you wish to continue? [y/N] " -n 1 -r
         echo    # (optional) move to a new line
         if [[ $REPLY =~ ^[Yy]$ ]] ; then
-            echo "Re-tagging testing images in preparation to push..."
+            echo "Re-naming/tagging testing images in preparation to push..."
             docker image tag "${IMAGE_ID}:${TESTING_TAG}" "${IMAGE_ID}:${LATEST_TAG}" || exit 1
             docker image tag "${IMAGE_ID}:${TESTING_TAG}" "${IMAGE_ID}:${VERSION_TAG}" || exit 1
             echo
@@ -53,7 +53,7 @@ case $1 in
         echo "Script version ${SCRIPT_VERSION}, by Josh 'Jekotia' Ameli."
         echo "Written for and tested under the bash shell."
         echo
-        echo "Currently building image for v${VERSION} of the Chirpy theme for Jekyll."
+        echo "Currently building image for v${VERSION} of Chirpy."
         echo "Gemfile sourced from https://github.com/cotes2020/chirpy-starter/tree/v${VERSION}"
     ;;
     *)
@@ -62,16 +62,16 @@ case $1 in
         echo "Simple script for consistent handling of docker images, used for testing Chirpy-"
         echo "based GitHub Pages sites. Extracts the VERSION value from the project Dockerfile"
         echo
-        echo "Image name:  ${IMAGE_ID}"
-        echo "Testing tag: ${TESTING_TAG}"
-        echo "Pushed tags: ${LATEST_TAG}"
-        echo "             ${TAG_BASE}vVERSION (v${VERSION})"
+        echo "Image name:      ${IMAGE_ID}"
+        echo "Testing tag:     ${TESTING_TAG}"
+        echo "Production tags: ${LATEST_TAG}"
+        echo "                 ${TAG_BASE}vVERSION (v${VERSION})"
         echo 
         echo "Commands:"
-        echo "  build     Use docker buildx to build the image with both tags"
-        echo "  test      Starts a container using the version-tagged image on port 4000,"
+        echo "  build     Use docker buildx to build the image with the testing tag"
+        echo "  test      Starts a container using the testing-tagged image on port 4000,"
         echo "            mounting the project directory as the site directory"
-        echo "  push      Pushes the image with both tags"
+        echo "  push      Pushes the image with the production tags"
         echo "  version   Prints version information"
     ;;
 esac
