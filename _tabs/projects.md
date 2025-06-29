@@ -27,33 +27,3 @@ Everything on this page can be found on [my GitHub account](https://github.com/J
 
 {{ entry.description }}
 {% endfor %}
-
----
-{% comment %}
-# Repositories
-{% for entry in site.data.docker %}
-# Docker Images
-[{{ entry.title }}](https://ghcr.io/{{ entry.image_name }}) [![tag](https://img.shields.io/github/v/tag/{{ entry.source }})](https://github.com/{{ entry.source }}/tags) [![Build & Push](https://github.com/{{ entry.source }}/actions/workflows/build-push.yml/badge.svg)](https://github.com/{{ entry.source }}/actions/workflows/build-push.yml)
-{% endfor %}
-{% include docker_1.html %}
-
----
-
-{% include docker_2.html %}
-
----
-
-{% include docker_3.html %}
-
----
-
-{% include docker_1.md %}
-
----
-
-{% include docker_2.md %}
-
----
-
-{% include docker_3.md %}
-{% endcomment %}
