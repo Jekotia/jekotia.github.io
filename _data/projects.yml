@@ -1,28 +1,14 @@
 # Belongs at: /_data/docker.yml
 
-
-# [![Build & Push](https://github.com/Jekotia/docker-github-pages-chirpy/actions/workflows/build-push.yml/badge.svg)](https://github.com/Jekotia/docker-github-pages-chirpy/actions/workflows/build-push.yml)
-
-
-# [![Build & Push](https://github.com/{{ repository }}/actions/workflows/build-push.yml/badge.svg)](https://github.com/{{ repository }}/actions/workflows/build-push.yml)
-
-
-# WORKFLOW NAME: Build & Push
-#    REPOSITORY:
-
-#      URL: https://github.com/{{ repository }}
-#    BADGE: https://github.com/{{ repository }}/actions/workflows/build-push.yml/badge.svg
-# WORKFLOW: https://github.com/{{ repository }}/actions/workflows/build-push.yml
-
 docker:
   - title: github-pages-chirpy
-    description: Based on the official <a href="https://github.com/github/pages-gem">github/pages-gem</a> image, this image adds dependencies necessary to use the Chirpy theme for Jekyll.
+    description: Based on the official <a href="https://github.com/github/pages-gem">github/pages-gem</a> image, this image adds dependencies necessary to use the Chirpy theme for Jekyll. Intended for local testing prior to pushing to GitHub Pages repos.
     image_name: jekotia/github-pages-chirpy
     source: Jekotia/docker-github-pages-chirpy
 
 repositories:
   - title: saturn
-    description: A comprehensive, Docker-based, multi-node service deployment built on top of Komodo. Designed to be flexible and portable.
+    description: A comprehensive, Docker-based, multi-node service deployment for home use, built on top of Komodo. Designed to be flexible and portable.
     source: Jekotia/saturn
     track_tags: false
   - title: adguard-home-toggle
